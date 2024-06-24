@@ -19,5 +19,11 @@
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-import": "^2.27.5",
         "nodemon": "^2.0.19"
-    }
+    },
+    "name": "dbsp-practical-11",
+    "version": "1.0.0", 
+    "description": "## Setup",
+    "main": ".eslintrc.js",
+    "author": "",
+    "license": "ISC"
 }
