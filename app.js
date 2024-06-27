@@ -6,11 +6,12 @@ const reportsRoute = require('./routes/reports');
 const studentsRoute = require('./routes/students');
 const staffRoute = require('./routes/staff');
 const authRoute = require('./routes/auth');
+const cors = require('cors');
 
 const app = express();
 app.use(express.json()); // to process JSON in request body
 
-
+app.use(cors());
 app.use(express.static('public'));
 
 app.use('/modules', modulesRoute);
