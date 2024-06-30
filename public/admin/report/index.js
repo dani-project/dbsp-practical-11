@@ -126,9 +126,13 @@ window.addEventListener('DOMContentLoaded', function () {
                 console.log(body.performance);
                 heading.textContent = "Module Performance";
                 const table = document.querySelector("#module-performance-table");
+                
+
                 table.style.display = "table";
                 // Render the body modules into the table with table body id="module-tbody
                 const tbody = document.querySelector("#module-performance-tbody");
+
+                tbody.innerHTML = "";
                 const performances = body.performance;
                 for (let i = 0; i < performances.length; i += 1) {
                     const performance = performances[i];

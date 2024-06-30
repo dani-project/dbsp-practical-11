@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const createHttpError = require('http-errors');
 
 const modulesRoute = require('./routes/modules');
@@ -6,7 +7,6 @@ const reportsRoute = require('./routes/reports');
 const studentsRoute = require('./routes/students');
 const staffRoute = require('./routes/staff');
 const authRoute = require('./routes/auth');
-const cors = require('cors');
 
 const app = express();
 app.use(express.json()); // to process JSON in request body
